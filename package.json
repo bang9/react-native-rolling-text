@@ -1,0 +1,52 @@
+{
+    "name": "react-native-rolling-text",
+    "version": "0.0.1",
+    "description": "marquee in react-native",
+    "main": "./src/index.js",
+    "types": "./src/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bang9/react-native-rolling-text"
+    },
+    "scripts": {
+        "build": "tsc",
+        "deploy": "yarn fix && tsc && npm publish",
+        "fix": "yarn fix:eslint && yarn fix:prettier",
+        "fix:eslint": "eslint --fix src --ext ts,tsx ",
+        "fix:prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
+        "lint": "yarn lint:tsc && yarn lint:eslint && yarn lint:prettier",
+        "lint:eslint": "eslint src --ext ts,tsx ",
+        "lint:prettier": "prettier --check \"src/**/*.{ts,tsx}\"",
+        "lint:tsc": "tsc --noEmit"
+    },
+    "author": "bang9 <gusrn1423@naver.com> (https://github.com/bang9)",
+    "license": "ISC",
+    "peerDependencies": {
+        "react": "*",
+        "react-native": ">=0.54"
+    },
+    "keywords": [
+        "react",
+        "react-native",
+        "marquee",
+        "move-text",
+        "rolling-text",
+        "banner"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "@constvarlet/eslint-config": "^1.0.3",
+        "@constvarlet/prettier-config": "^1.0.1",
+        "@types/react": "^17.0.6",
+        "@types/react-native": "^0.64.5",
+        "@typescript-eslint/eslint-plugin": "^4.24.0",
+        "@typescript-eslint/parser": "^4.24.0",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-react": "^7.23.2",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "prettier": "^2.3.0",
+        "typescript": "^4.2.4"
+    },
+    "prettier": "@constvarlet/prettier-config"
+}
