@@ -4,7 +4,8 @@
 <span class="npmdownloads"><a href="https://npmjs.org/package/react-native-rolling-text" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/react-native-rolling-text.svg" alt="NPM downloads" /></a></span>
 
 # react-native-rolling-text
-marquee in react-native!
+<span class="module"><a href="https://snack.expo.io/@bang9/marquee" title="Example"><img src="https://img.shields.io/badge/Expo-test it on expo snack-black?style=flat-square&logo=expo" alt="RNRollingText" /></a></span><br/>
+marquee in react-native! <br/><br/>
 
 ![img](screenshot/result.gif)
 
@@ -55,7 +56,7 @@ import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import RollingText from 'react-native-rolling-text';
 
-export default function App() {
+function App() {
     return (
         <View style={styles.container}>
             <View style={styles.banner}>
