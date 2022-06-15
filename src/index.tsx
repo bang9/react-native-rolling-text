@@ -41,7 +41,6 @@ const RollingText: React.FC<Props> = ({
 
         if (force || width < textWidth) {
             logger("marquee animation triggered");
-            animation.setValue(0);
 
             const durationPerRange = durationMsPerWidth;
             const initialTranslateRange = textWidth;
@@ -87,6 +86,7 @@ const RollingText: React.FC<Props> = ({
         }
 
         return () => {
+            animation.setValue(0);
             marquee && marquee.stop();
             timeout && clearTimeout(timeout);
         };
